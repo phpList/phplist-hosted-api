@@ -13,8 +13,9 @@ SOAP API for phpList.com Hosted accounts. This API is not supported by self-host
 
 #### PHP
 
-+ A client library which implements the API is included in this repository `phplistHostedClient.class.php`
-+ A copy of [NuSoap PHP](https://sourceforge.net/projects/nusoap/)'s /lib directory is required by the PHP client library and should be located within the same directory.
++ A client library which implements the API is `phplistHostedClient.class.php`
+  + A copy of [NuSoap PHP](https://sourceforge.net/projects/nusoap/)'s /lib directory is required by the PHP client library and should be located within the same directory
++ An example implementation of the PHP client library is `APIexample.php`
 
 ## Usage
 
