@@ -9,11 +9,13 @@ SOAP API for phpList.com Hosted accounts. This API is not supported by self-host
 + A phpList hosted account (freely available at [phpList.com](http://phplist.com/signup))
 + Enable API support for your account (request access from [your account](https://phplist.com/contactus))
 
-### SOAP Client
+### Clients
 
-+ phplistHostedClient.class.php from this repository
-+ A copy of [NuSoap PHP](https://sourceforge.net/projects/nusoap/)'s /lib directory within the same directory as the above file
+#### PHP
 
-## Supported actions
++ A client library which implements the API is included in this repository `phplistHostedClient.class.php`
++ A copy of [NuSoap PHP](https://sourceforge.net/projects/nusoap/)'s /lib directory is required by the PHP client library and should be located within the same directory.
 
-See soap-api-\*.md for call documentation.
+## Usage
+
+See soap-api-\*.md for usage documentation in API Blueprint format.
