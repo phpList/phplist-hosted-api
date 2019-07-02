@@ -1,0 +1,15 @@
+{
+    "name": "phplist/phplist-soap-api",
+    "description": "A simple SOAP API for phpList Hosted",
+    "type": "library",
+    "require": {
+        "econea/nusoap": "v0.9.6"
+    },
+    "license": "AGPL3",
+    "authors": [
+        {
+            "name": "Sam Tuke",
+            "email": "mail@samtuke.com"
+        }
+    ]
+}

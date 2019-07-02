@@ -53,7 +53,7 @@ class phpListHostedSoapClient {
 
   function xCreateSoap() {
      if (is_null($this->soap)) {
-       require(dirname(__FILE__)."/lib/nusoap.php");
+       require(dirname(__FILE__)."/vendor/econea/nusoap/src/nusoap.php");
        $this->soap = new nusoap_client($this->soap_url);
      }
   }
