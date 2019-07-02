@@ -19,7 +19,7 @@ class phpListHostedSoapClient {
   private $soap_url = '';
   private $soap;
 
-  function phpListHostedSoapClient($soap_url) {
+  function __construct($soap_url) {
     $this->soap_url = $soap_url;
     $this->xCreateSoap();
   }
