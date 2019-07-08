@@ -1,6 +1,6 @@
 # phplist-hosted-api
 
-SOAP API for phpList.com Hosted accounts. This API is not supported by self-hosted versions of phpList (see the REST API v1&2).
+SOAP API for phpList.com Hosted accounts. This API is not supported by self-hosted versions of phpList (see the REST API).
 
 ## Requirements
 
@@ -21,7 +21,7 @@ SOAP API for phpList.com Hosted accounts. This API is not supported by self-host
 
 Access URLs use the following format:
 
-https://www.phplist.com/API/soap.php?wdsl&tag=[installation]&user=[account email]&pass=[account password]
+`https://www.phplist.com/API/soap.php?wdsl&tag=[installation]&user=[account email]&pass=[account password]`
 
 [installation] is the name of the phpList account to use (the account name is stated on the [Account page](https://phplist.com/myaccount) of each phpList account). For the WSDL, add "&wsdl" to the above URL.
 
