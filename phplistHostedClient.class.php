@@ -8,7 +8,6 @@ error_reporting(E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
  * version 0.1 - 2011-07-20, Michiel Dethmers phpList Ltd
  *
  * requires nuSoap: http://sourceforge.net/projects/nusoap/
- * unpack nuSoap in ./lib/
  *
  * for more info https://www.phplist.com/contactus
  * 
@@ -19,9 +18,13 @@ class phpListHostedSoapClient {
   private $soap_url = '';
   private $soap;
 
-  function phpListHostedSoapClient($soap_url) {
+  function __construct($soap_url) {
     $this->soap_url = $soap_url;
     $this->xCreateSoap();
+  }
+
+  function setCredentials($username, $password, $authtype = 'basic', $digestRequest = array(), $certRequest = array()) {
+    $this->soap->setCredentials($username, $password, $authtype, $digestRequest, $certRequest);
   }
 
   function getMessageLittleStats($message_id) {
@@ -50,7 +53,7 @@ class phpListHostedSoapClient {
 
   function xCreateSoap() {
      if (is_null($this->soap)) {
-       require(dirname(__FILE__)."/lib/nusoap.php");
+       require(dirname(__FILE__)."/vendor/econea/nusoap/src/nusoap.php");
        $this->soap = new nusoap_client($this->soap_url);
      }
   }

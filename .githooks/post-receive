@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# Script to update dependencies after reception
+
+# Check if composer is available
+if ! [ -x "$(command -v composer)" ]; then
+  echo 'Error: composer is not installed.' >&2
+  exit 1
+fi
+
+# Update dependencies
+composer update;
